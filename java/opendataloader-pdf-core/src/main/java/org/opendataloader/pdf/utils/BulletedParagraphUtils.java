@@ -164,6 +164,16 @@ public class BulletedParagraphUtils {
     }
 
     /**
+     * Checks if a text line is an IEEE Roman section title. Retained for backwards compatibility.
+     *
+     * @param line the text line to check
+     * @return true if the line is an IEEE Roman section title, false otherwise
+     */
+    public static boolean isIeeeRomanSectionTitle(TextLine line) {
+        return isRomanSectionTitle(line);
+    }
+
+    /**
      * Gets the first character label from a text node.
      *
      * @param semanticTextNode the text node to extract the label from
